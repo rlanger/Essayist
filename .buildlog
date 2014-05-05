@@ -1,0 +1,391 @@
+---
+build.dart --machine --full
+
+build.dart finished [745 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [961 ms]
+
+---
+build.dart --machine --changed=web/clickcounter.dart
+
+build.dart finished [968 ms]
+
+---
+build.dart --machine --changed=web/jotnote.dart --removed=web/clickcounter.dart
+
+build.dart finished [957 ms]
+
+---
+build.dart --machine --changed=web/jotnote.html --removed=web/clickcounter.html
+[{"method":"error","params":{"file":"web/essayist.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"essayist\".","line":11,"charStart":260,"charEnd":304}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":21,"charStart":565,"charEnd":590}}]
+build failed with errors: {Transform polymer (Linter) on essayist|web/essayist.html threw error: couldn't find imported asset "web/clickcounter.html" in package "essayist".}
+build.dart finished [982 ms]
+
+---
+build.dart --machine --changed=web/jotnote.html
+[{"method":"error","params":{"file":"web/essayist.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"essayist\".","line":11,"charStart":260,"charEnd":304}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":21,"charStart":565,"charEnd":590}}]
+[{"method":"warning","params":{"file":"web/jotnote.html","message":"Invalid event handler body \"{{setContent('clicked')}}\". Declare a method in your custom element \"void handlerName(event, detail, target)\" and use the form on-click=\"handlerName\".","line":15,"charStart":297,"charEnd":333}}]
+build failed with errors: {Transform polymer (Linter) on essayist|web/essayist.html threw error: couldn't find imported asset "web/clickcounter.html" in package "essayist".}
+build.dart finished [959 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected end tag (click-counter). Ignored.","line":21,"charStart":593,"charEnd":609}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"End tag (div) seen too early. Expected other end tag.","line":22,"charStart":614,"charEnd":620}}]
+[{"method":"warning","params":{"file":"web/jotnote.html","message":"Invalid event handler body \"{{setContent('clicked')}}\". Declare a method in your custom element \"void handlerName(event, detail, target)\" and use the form on-click=\"handlerName\".","line":15,"charStart":297,"charEnd":333}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"definition for Polymer element with tag name \"jot-note\" not found.","line":21,"charStart":560,"charEnd":593}}]
+build.dart finished [971 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/jotnote.html","message":"Invalid event handler body \"{{setContent('clicked')}}\". Declare a method in your custom element \"void handlerName(event, detail, target)\" and use the form on-click=\"handlerName\".","line":15,"charStart":297,"charEnd":333}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"definition for Polymer element with tag name \"jot-note\" not found.","line":21,"charStart":560,"charEnd":593}}]
+build.dart finished [1005 ms]
+
+---
+build.dart --machine --changed=web/jotnote.html
+[{"method":"warning","params":{"file":"web/jotnote.html","message":"Invalid event handler body \"{{setContent('clicked')}}\". Declare a method in your custom element \"void handlerName(event, detail, target)\" and use the form on-click=\"handlerName\".","line":15,"charStart":294,"charEnd":330}}]
+build.dart finished [948 ms]
+
+---
+build.dart --machine --changed=web/jotnote.dart
+[{"method":"warning","params":{"file":"web/jotnote.html","message":"Invalid event handler body \"{{setContent('clicked')}}\". Declare a method in your custom element \"void handlerName(event, detail, target)\" and use the form on-click=\"handlerName\".","line":15,"charStart":294,"charEnd":330}}]
+build.dart finished [950 ms]
+
+---
+build.dart --machine --changed=web/jotnote.html
+[{"method":"warning","params":{"file":"web/jotnote.html","message":"Invalid event handler body \"{{setContent()}}\". Declare a method in your custom element \"void handlerName(event, detail, target)\" and use the form on-click=\"handlerName\".","line":15,"charStart":294,"charEnd":321}}]
+build.dart finished [959 ms]
+
+---
+build.dart --machine --changed=web/jotnote.html
+
+build.dart finished [952 ms]
+
+---
+build.dart --machine --changed=web/jotnote.html
+
+build.dart finished [950 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [1141 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [947 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+
+build.dart finished [969 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [973 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+
+build.dart finished [977 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+
+build.dart finished [954 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":29,"charStart":726,"charEnd":774}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":29,"charStart":726,"charEnd":774}}]
+build.dart finished [966 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":29,"charStart":726,"charEnd":774}}]
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":29,"charStart":726,"charEnd":774}}]
+build.dart finished [1073 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":28,"charStart":645,"charEnd":693}}]
+build.dart finished [969 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":28,"charStart":645,"charEnd":693}}]
+build.dart finished [972 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":28,"charStart":645,"charEnd":693}}]
+build.dart finished [981 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":42,"charStart":1029,"charEnd":1077}}]
+build.dart finished [1096 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":42,"charStart":1029,"charEnd":1077}}]
+build.dart finished [980 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":42,"charStart":1029,"charEnd":1077}}]
+build.dart finished [977 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":42,"charStart":1025,"charEnd":1073}}]
+build.dart finished [972 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":42,"charStart":1024,"charEnd":1072}}]
+build.dart finished [961 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+[{"method":"warning","params":{"file":"web/essayist.html","message":"Unexpected start tag token (script) in the after body phase.","line":42,"charStart":1020,"charEnd":1068}}]
+build.dart finished [972 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [951 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [986 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [975 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [969 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [938 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [945 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [975 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [995 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [973 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [963 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [978 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [958 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [968 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [972 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [1008 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [961 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [959 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [962 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [943 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [970 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [962 ms]
+
+---
+build.dart --machine --changed=web/essayist.dart
+
+build.dart finished [967 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [952 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [958 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [948 ms]
+
+---
+build.dart --machine --changed=web/essayist.css
+
+build.dart finished [973 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [1032 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [1008 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [1042 ms]
+
+---
+build.dart --machine --changed=web/essayist.css
+
+build.dart finished [973 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [961 ms]
+
+---
+build.dart --machine --changed=web/essayist.css
+
+build.dart finished [967 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [992 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [965 ms]
+
+---
+build.dart --machine --changed=web/essayist.css
+
+build.dart finished [973 ms]
+
+---
+build.dart --machine --changed=web/essayist.css
+
+build.dart finished [987 ms]
+
+---
+build.dart --machine --changed=web/directives.dart
+
+build.dart finished [978 ms]
+
+---
+build.dart --machine --changed=web/directives.dart
+
+build.dart finished [967 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+
+build.dart finished [980 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [1042 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+
+build.dart finished [1002 ms]
+
+---
+build.dart --machine --changed=web/directives.dart
+
+build.dart finished [968 ms]
+
+---
+build.dart --machine --changed=web/essayist.html
+
+build.dart finished [976 ms]
+
+---
+build.dart --machine --changed=web/sources.html
+
+build.dart finished [994 ms]
+
+---
+build.dart --machine --changed=web/sources.html
+
+build.dart finished [972 ms]
+
+---
+build.dart --machine --changed=web/main.dart
+
+build.dart finished [986 ms]
+

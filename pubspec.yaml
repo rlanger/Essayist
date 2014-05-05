@@ -1,0 +1,8 @@
+name: essayist
+description: A sample Polymer application
+dependencies:
+  angular: any
+  polymer: any
+transformers:
+- polymer:
+    entry_points: web/essayist.html

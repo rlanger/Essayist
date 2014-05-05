@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essayist</title>
+    <link rel="stylesheet" href="essayist.css">
+    
+    <!-- import the click-counter -->
+    <link rel="import" href="jotnote.html">
+    <script src="packages/browser/dart.js"></script>
+    
+    <style>
+      [ng-cloak] { display: none; }
+      .ng-show { display: block; }
+      .ng-hide { display: none; }
+      
+      editing {}
+    </style>
+  </head>
+  <body>
+    <h1>Essayist</h1>
+    
+    <a href="#">Sources</a> | <a href="#">Assemble Essay</a>
+    
+    <h2>Reference Title, etc</h2>
+    <p>Possibly a link to original, summary to show on "Sources" page</p>
+    <p>Record notes here:</p>
+      
+      <div note-controller>
+      <div class="notepad">
+        <ul contenteditable ng-model="NoteCtrl.content">
+            {{NoteCtrl.content}}
+        </ul>
+      </div>
+      
+      <ul>
+            <p>{{NoteCtrl.content}}</p>
+      </ul>
+      
+      </div>
+
+  <script type="application/dart" src="main.dart"></script>
+  </body>
+  
+</html>
